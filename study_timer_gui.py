@@ -159,7 +159,8 @@ class StudyTimerLogic(QObject):
         self.is_paused = False
         self._clear_current_session()
         self.current_cycle_study_time = 0
-        self.state_changed.emit("Deep Work Timer\nRight-click to Start", self.current_state)
+        # MODIFIED BRANDING TEXT
+        self.state_changed.emit("EZLockIn\nRight-click to Start", self.current_state)
         self.time_updated.emit(self.total_study_time)
 
     def reset_all(self):
@@ -448,7 +449,7 @@ class StudyTimerGUI(QWidget):
         always_on_top_action.triggered.connect(self.toggle_always_on_top)
 
         opacity_menu = QMenu("💧 Opacity", self)
-        for val in [1.0, 0.9, 0.8, 0.7, 0.6, 0.5, 0.4, 0.3, 0.2, 0.1, 0.01]:
+        for val in [1.0, 0.9, 0.8, 0.7, 0.6, 0.5, 0.4, 0.3, 0.2, 0.1]:
             op_action = QAction(f"{int(val * 100)}%", self)
             op_action.triggered.connect(lambda _, v=val: self.set_opacity(v))
             opacity_menu.addAction(op_action)
@@ -504,7 +505,8 @@ class StudyTimerGUI(QWidget):
     def create_tray_icon(self):
         self.tray_icon = QIcon(resource_path('icon.ico'))
         self.tray = QSystemTrayIcon(self.tray_icon, self)
-        self.tray.setToolTip("Deep Work Timer")
+        # MODIFIED TOOLTIP
+        self.tray.setToolTip("EZLockIn")
         self.tray_menu = QMenu(self)
         self.tray_menu.aboutToShow.connect(self.update_tray_menu)
         self.tray.setContextMenu(self.tray_menu)
@@ -588,4 +590,3 @@ if __name__ == "__main__":
 
     window.show()
     sys.exit(app.exec())
-# --- END OF FILE study_timer_gui.py ---
