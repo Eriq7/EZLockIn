@@ -59,6 +59,19 @@ EZLockIn keeps you focused using two game-inspired mechanics: **randomness** and
 
 ---
 
+### UI Preview
+
+**Frontend** — what the timer window looks like on your desktop.  
+![Frontend](./document/frontend.png)
+
+**Right-click Menu** — all controls are accessible from the context menu.  
+![Right-click Menu](./document/right_click.png)
+
+**Statistics Output** — `study_log.csv` records your study sessions (start/end time + duration).  
+![Statistics](./document/statistic.png)
+
+---
+
 ## Custom Configuration (`config.json`)
 
 On first launch, EZLockIn automatically creates a `config.json` file.  
