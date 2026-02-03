@@ -35,6 +35,22 @@ EZLockIn keeps you focused using two game-inspired mechanics: **randomness** and
 
 ## Quick Start (Recommended)
 
+> ✅ **macOS only** — this release is built for **MacBook / macOS** (not Windows).
+
+### Download & Run (3 steps)
+
+| Step | What to do |
+| :-- | :-- |
+| **1** | Go to the **GitHub Release** page: **https://github.com/Eriq7/EZLockIn/releases/tag/v1.0.0** |
+| **2** | Download **EZLockIn-macOS.zip**, then unzip it |
+| **3** | Open **EZLockIn.app** and start your focus cycle |
+
+### If macOS blocks the app (Gatekeeper)
+
+If you see “can’t be opened because it is from an unidentified developer”:
+
+**Right-click** `EZLockIn.app` → **Open** → **Open** again (only needed the first time).
+
 ---
 
 ## Usage Guide
